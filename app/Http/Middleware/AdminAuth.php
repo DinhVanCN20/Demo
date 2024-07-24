@@ -17,12 +17,14 @@ class AdminAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->type != 1) {
-            return redirect()->route('signin')->with('fail','Tài khoản không có quyền truy cập');
+        if (Auth::check() && Auth::user()->type == 1) {
+            return $next($request);
+        } else {
+            toastr()->error('Tài khoản không có quyền truy cập!');
+            return redirect()->route('signin');
         }
         // elseif(Auth::check() && Auth::user()->type == 1){
         //     return redirect()->route('dashboard')->with('success','Đăng nhập thành công');
         // }
-        return $next($request);
     }
 }

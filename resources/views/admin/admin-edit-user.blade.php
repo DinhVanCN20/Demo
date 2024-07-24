@@ -222,7 +222,7 @@
               @endif
               <div class="pt-2 p-4">
                 <h6 class="mb-0">Name:</h6>
-                <input class="mb-0 form-control" name="name" placeholder="{{$user->name}}" disabled></input>
+                <input class="mb-0 form-control" name="name" value="{{$user->name}}"></input>
               </div>
 
               <div class="pt-2 p-4">
@@ -232,7 +232,7 @@
 
               <div class="pt-1 p-4">
                 <h6 class="mb-0">Phone Number:</h6>
-                <input class="mb-0 form-control" name="username" placeholder="{{$user->phonenumber}}" disabled></input>
+                <input class="mb-0 form-control" name="phonenumber" value="{{$user->phonenumber}}"></input>
               </div>
               
               <div class="pt-1 p-4">

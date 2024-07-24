@@ -11,8 +11,11 @@ use Illuminate\Support\Facades\Hash;
 class Admin extends Controller
 {
     public function admin() {
-    
+        if (Auth::check() && Auth::user()->type == 1) {
+            return redirect('test');
+        } else {
             return view('admin.admin');
+        }
     }
     //Đăng nhập admin
     public function adminLogin(Request $request) {
@@ -86,16 +89,20 @@ class Admin extends Controller
 
     public function editUser_post(Request $request, $id){
         $user = UserGame::find($id);
+        $user->name = $request->name;
         $user->type = $request->type;
+        $user->phonenumber = $request->phonenumber;
         $user->save();
-        return redirect('/test/editUser/'.$id)->with('thongbao', 'Sửa thông tin thành công!');
+        toastr()->success('Sửa thông tin thành công!');
+        return redirect('/test/editUser/'.$id);
     }
 
     //xóa user
     public function deleteUser($id){
         $user = UserGame::find($id);
         $user->delete();
-        return redirect()->route('list')->with('success','Xóa thành công');
+        toastr()->success('Đã xoá user!');
+        return redirect()->route('list');
     }
 
     //thêm tin tức mới
@@ -123,10 +130,12 @@ class Admin extends Controller
             $data['updated_at'] = date("Y-m-d");
             
             $post->insert($data);
+            toastr()->success('Thêm tin tức thành công!');
         }
         return view('admin.index-add',$user);
     }
 
+    //sửa tin tức
     public function test_edit(Request $req, $id ='') {
         $post_edit = new News();
         
@@ -152,6 +161,7 @@ class Admin extends Controller
             $data['updated_at'] = date("Y-m-d");
             
             $post_edit->where('id',$id)->update($data);
+            toastr()->success('Sửa thông tin thành công!');
             return redirect('test/edit/' . $id);
         }
         $row = $post_edit->find($id);
@@ -163,6 +173,7 @@ class Admin extends Controller
         $row = $post_delete->find($id);
         if ($req->method() == 'POST'){
             $row->delete();
+            toastr()->success('Đã xoá tin tức!');
             return redirect('test');
         }
         return view('admin.admin-post-delete',['row' => $row]);
