@@ -21,7 +21,7 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 // Route::get('/', function () {
 //     return view('tintuc.index');
 // })->name('index');
-Route::get('/dashboard', [Admin::class, 'test'])-> middleware('admin')->name('dashboard');
+// Route::get('/dashboard', [Admin::class, 'test'])-> middleware('admin')->name('dashboard');
 
 //Cổng tin tức
 Route::get('/', [NewsController::class, 'index'])->name('index');

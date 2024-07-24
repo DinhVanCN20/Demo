@@ -20,8 +20,7 @@ class AdminAuth
         if (Auth::check() && Auth::user()->type == 1) {
             return $next($request);
         } else {
-            toastr()->error('Tài khoản không có quyền truy cập!');
-            return redirect()->route('signin');
+            return redirect()->route('signin')->with('error', 'Tài khoản không có quyền truy cập!');
         }
         // elseif(Auth::check() && Auth::user()->type == 1){
         //     return redirect()->route('dashboard')->with('success','Đăng nhập thành công');
