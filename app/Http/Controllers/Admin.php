@@ -138,6 +138,7 @@ class Admin extends Controller
     //sửa tin tức
     public function test_edit(Request $req, $id ='') {
         $post_edit = new News();
+        $user['info'] = Auth::user()->username;
         
         if ($req->method() == 'POST'){
             // validate dữ liệu đầu vào
@@ -165,10 +166,11 @@ class Admin extends Controller
             return redirect('test/edit/' . $id);
         }
         $row = $post_edit->find($id);
-        return view('admin.admin-post-edit',['row' => $row]);
+        return view('admin.admin-post-edit1',['row' => $row], $user);
     }
 
     public function post_delete(Request $req, $id ='') {
+        $user['info'] = Auth::user()->username;
         $post_delete = new News();
         $row = $post_delete->find($id);
         if ($req->method() == 'POST'){
@@ -176,6 +178,6 @@ class Admin extends Controller
             toastr()->success('Đã xoá tin tức!');
             return redirect('test');
         }
-        return view('admin.admin-post-delete',['row' => $row]);
+        return view('admin.admin-post-delete1',['row' => $row], $user);
     }
 }
