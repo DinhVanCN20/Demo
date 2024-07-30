@@ -9,7 +9,10 @@ use App\Models\News;
 class NewsController extends Controller
 {
     public function index(Request $request){
-        return view('tintuc.index');
+        $posts = News::orderBy('created_at', 'desc')->get();
+        $data = ['posts' => $posts];
+        
+        return view('tintuc.index',$data);
     }
 
     public function tintuc() {
