@@ -57,248 +57,134 @@
             <div class='content-detail'>
                 <h1><span><img src='./assets/images/icon-sukien.png'></span>SỰ KIỆN</h1>
             </div>
-            <div class='content-sukien scroll-box mt-4'>
-                <div class='title-sukien border-bottom mb-4'>
-                    <p><strong>[CẢNH BÁO]</strong> Thông báo khóa tải khoản vi phạm do nạp lậu</p>
-                    <i>20.08.2019</i>
-                </div>
-                <div class="content-sukien--text">
-                        Thể lệ Tham gia
-                        Thời gian diễn ra sự kiện:<br>
-                        -	Đợt 1: Từ ngày 04/06 đến 23:59 ngày 06/06/2015.<br>
-                        -	Đợt 2: Từ 00:01 ngày 07/06 đến 23:59 ngày 09/06/2015.<br>
-                        -	Đợt 3:  Từ ngày 10/06 đến 23:59 ngày 13/06/2015.<br>
-                        A. Đối tượng tham gia<br>
-                        Tất cả người chơi đã có tài khoản trên Cổng game chuyên gia: amo.vn.<br>
-                        Nếu chưa có tài khoản amo.vn: Hãy click Đăng ký nhanh để tham gia.<br>
-                        B. Cách thức tham gia<br>
-                        Bạn đăng nhập tài khoản amo và bắt đầu chơi mini game  mô phỏng theo trò chơi “Phá gạch”. Mục tiêu là thu hoạch đủ tất cả các hòm
-                        “Tiêu” ở vị trí cao nhất để nhận điểm thưởng.<br><br>
-
-                        Số lượt chơi trong ngày: Không giới hạn.<br>
-                        C. Cơ chế  tính điểm<br>
-                        Mỗi lần ăn một “Tiêu” bạn nhạn được 100 điểm, điểm này có giá trị cộng dồn qua từng lượt chơi.<br>
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.<br>
-                        Kết thúc mỗi đợt (kéo dài 3 ngày) TOP 3 huynh đài  có tổng điểm tích lũy cao nhất sẽ nhận được quà từ NPH.<br><br>
-                        <p style="text-align: center;"><img src="./assets/images/ingame1.png"></p>
-
-                        Số lượt chơi trong ngày: Không giới hạn.<br>
-                        C. Cơ chế  tính điểm <br>
-                        Mỗi lần ăn một “Tiêu” bạn nhạn được 100 điểm, điểm này có giá trị cộng dồn qua từng lượt chơi.<br>
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.<br>
-                        Kết thúc mỗi đợt (kéo dài 3 ngày) TOP 3 huynh đài  có tổng điểm tích lũy cao nhất sẽ nhận được quà từ NPH. <br><br>
-
-                        Số lượt chơi trong ngày: Không giới hạn<br>
-                        -	Đợt 2: Từ 00:01 ngày 07/06 đến 23:59 ngày 09/06/2015.<br>
-                        -	Đợt 3:  Từ ngày 10/06 đến 23:59 ngày 13/06/2015.<br>
-                        A. Đối tượng tham gia<br>
-                        Tất cả người chơi đã có tài khoản trên Cổng game chuyên gia: amo.vn.<br>
-                        Nếu chưa có tài khoản amo.vn: Hãy click Đăng ký nhanh để tham gia.<br>
-                        B. Cách thức tham gia<br>
-                        Bạn đăng nhập tài khoản amo và bắt đầu chơi mini game  mô phỏng theo trò chơi “Phá gạch”. Mục tiêu là thu hoạch đủ tất cả các hòm
-                        “Tiêu” ở vị trí cao nhất để nhận điểm thưởng.<br><br>
-
-                        Số lượt chơi trong ngày: Không giới hạn<br>
-                        C. Cơ chế  tính điểm <br>
-                        Mỗi lần ăn một “Tiêu” bạn nhạn được 100 điểm, điểm này có giá trị cộng dồn qua từng lượt chơi.<br>
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.<br>
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.<br>
-                        Kết thúc mỗi đợt (kéo dài 3 ngày) TOP 3 huynh đài  có tổng điểm tích lũy cao nhất sẽ nhận được quà từ NPH. <br>
-                        C. Cơ chế  tính điểm <br>
-                        Mỗi lần ăn một “Tiêu” bạn nhạn được 100 điểm, điểm này có giá trị cộng dồn qua từng lượt chơi.<br>
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.<br>
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.<br>
-                        Kết thúc mỗi đợt (kéo dài 3 ngày) TOP 3 huynh đài  có tổng điểm tích lũy cao nhất sẽ nhận được quà từ NPH. <br>
-                        Số lượt chơi trong ngày: Không giới hạn<br>
-
-                        <!--  -->
-                        
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        Nếu không đỡ  được bi, bạn bị tính là thất bại trong lượt chơi đó.
-                        Khi bắt đầu lượt chơi mới, các ô gạch sẽ phục hồi về trạng thái ban đầu nhưng điểm số không thay đổi.
-                        <!--  -->
-
-
-
+            <div class='content-tintuc scroll-box mt-4'>
+              <ul>
+                <li class='box-tintuc'><a>
+                    <img src='./assets/images/ts_icon_02.png'>
+                    <div class='float-right box-text'>
+                        <p>
+                            <strong>Tính năng: Băng Hải Tặc</strong>
+                            <span>03/05/2019</span>
+                        </p>
+                        <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
                     </div>
-            </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_03.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                  </a>
+                </li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_07.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                  </a>
+                </li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_02.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                  </a>
+                </li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_03.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                  </a>
+                </li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_07.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_02.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_03.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_07.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_02.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_03.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+                <li class='box-tintuc'><a>
+                  <img src='./assets/images/ts_icon_07.png'>
+                  <div class='float-right box-text'>
+                      <p>
+                          <strong>Tính năng: Băng Hải Tặc</strong>
+                          <span>03/05/2019</span>
+                      </p>
+                      <p>Từng bừng khai mở Máy Chủ Thiên Nam S30 game Phàm Nhân Tu Tiên. Bài viết sẽ tổng hợp những sự kiện diễn ra sau khi mở server </p>
+                  </div>
+                </a></li>
+              </ul>
+          </div>
         <!-- end: content body -->
         
       </div>
