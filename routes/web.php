@@ -42,6 +42,7 @@ Route::get('/dangky',[UserController::class, 'dangky']);
 Route::post('/dangky', [UserController::class, 'dangky_post']);
 Route::get('/dangnhap',[UserController::class, 'dangnhap'])->name('dangnhap');
 Route::post('/dangnhap',[UserController::class, 'dangnhapUser'])->name('dangnhap-user');
+Route::get('/logoutUser', [UserController::class, 'logout']);
 
 /*ADMIN quản lý user*/
 Route::get('/test/list', [Admin::class, 'post_list'])->name('list')-> middleware('admin');

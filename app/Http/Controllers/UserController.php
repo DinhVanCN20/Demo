@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserGame;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
     public function dangnhap(){
-        return view('user.dangnhap'); 
+
+        return view('user.dangnhap');
     }
 
     public function dangky(){
@@ -36,20 +38,18 @@ class UserController extends Controller
 
     public function dangnhapUser(Request $req){
         request()->validate([
-            'phonenumber'=> 'required|min:10|max:10',
             'password' => 'required|min:6|max:255',
         ]);
 
-        $user = UserGame::where('username', '=', $req->username)->first();
-        if($user){
-            if(Hash::check($req->password,$user->password)){
-                $req->session()->put('loginId', $user->id);
-                    return redirect()->route('index');
-            }else{
-                return back()->with('fail', 'Mật khẩu không đúng');
-            }
-        } else{
-            return back()->with('fail', 'Không tìm thấy tên tài khoản');
+        if(Auth::attempt(['username'=> $req->username, 'password'=> $req->password])){
+            return redirect()->route('index');
+        } else {
+            return redirect()->back()->with('fail','Thông tin không chính xác!');
         }
+    }
+
+    public function logout() {
+        Auth::logout();
+        return redirect()->route('index');
     }
 }

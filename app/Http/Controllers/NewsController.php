@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\News;
-
+use Illuminate\Support\Facades\Auth;
 
 class NewsController extends Controller
 {
     public function index(Request $request){
+        // $user['info'] = Auth::user()->username;
         $posts = News::orderBy('created_at', 'desc')->get();
         $data = ['posts' => $posts];
         
@@ -16,12 +17,10 @@ class NewsController extends Controller
     }
 
     public function tintuc() {
-        // $tintuc = new News();
-        // $rows = $tintuc->all();
-        // $data['rows']= $rows;
+        $user['info'] = Auth::user()->username;
         $posts = News::orderBy('created_at', 'desc')->get();
         $data = ['posts' => $posts];
         
-        return view('tintuc.tintuc',$data);
+        return view('tintuc.tintuc',$data, $user);
     }
 }

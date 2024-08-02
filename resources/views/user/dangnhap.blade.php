@@ -98,15 +98,6 @@
                                                         @enderror
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th>Sđt đăng nhập</th>
-                                                    <td>
-                                                        <input placeholder="Nhập số điện thoại" name="phonenumber" value="{{old('phonenumber')}}">
-                                                        @error('phonenumber')
-                                                            <div class="text-danger">{{$message}}</div>
-                                                        @enderror
-                                                    </td>
-                                                </tr>
                                             </tbody>
                                         </th>
                                 </table>
