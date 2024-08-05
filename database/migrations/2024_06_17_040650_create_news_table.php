@@ -15,11 +15,14 @@ class CreateNewsTable extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
+            $table->id('category_id');
             $table->string('title',100)->tintuc();
             $table->text('description')->tintuc();
             $table->string('image',255);
             $table->text('content');
             $table->timestamps();
+
+            $table->foreign('category_id')->references('category_id')->on('categories');
         });
     }
 
