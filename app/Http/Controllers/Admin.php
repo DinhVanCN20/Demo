@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserGame;
 use App\Models\News;
+use App\Models\Events;
+use Illuminate\Console\Scheduling\Event;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -61,12 +63,7 @@ class Admin extends Controller
     //hiển thị danh sách tin tức
     public function test(){
         $user['info'] = Auth::user()->username;
-
-        // $post = new News();
-
-        // $rows = $post->all();
-        // $data['rows']= $rows;
-
+        
         $posts = News::orderBy('created_at', 'desc')->get();
         $data = ['posts' => $posts];
         
@@ -169,6 +166,7 @@ class Admin extends Controller
         return view('admin.admin-post-edit1',['row' => $row], $user);
     }
 
+    //xoá tin tức
     public function post_delete(Request $req, $id ='') {
         $user['info'] = Auth::user()->username;
         $post_delete = new News();
@@ -179,5 +177,83 @@ class Admin extends Controller
             return redirect('test');
         }
         return view('admin.admin-post-delete1',['row' => $row], $user);
+    }
+
+    //Sự kiện
+    //thêm sự kiện mới
+    public function event_add(Request $req) {
+        $user['info'] = Auth::user()->username;
+        if ($req->method() == 'POST'){
+            $post = new Events();
+
+            // validate dữ liệu đầu vào
+            $validated = $req -> validate([
+                'title' => 'required',
+                'file' => 'required|image',
+                'description' => 'required|max:200',
+                'content' =>'required'
+            ]);
+            // đường dẫn lưu ảnh vào file public/uploads
+            $path = $req->file('file')->store('/',['disk' =>'my_disk']);
+
+            // lưu dữ liệu vào bảng news
+            $data['title'] = $req->input('title');
+            $data['image'] = $path;
+            $data['description'] = $req->input('description');
+            $data['content'] = $req->input('content');
+            $data['created_at'] = date("Y-m-d");
+            $data['updated_at'] = date("Y-m-d");
+            
+            $post->insert($data);
+            toastr()->success('Thêm sự kiện thành công!');
+        }
+        return view('admin.index-add-event',$user);
+    }
+
+    //sửa sự kiện
+    public function event_edit(Request $req, $id ='') {
+        $post_edit = new Events();
+        $user['info'] = Auth::user()->username;
+        
+        if ($req->method() == 'POST'){
+            // validate dữ liệu đầu vào
+            $validated = $req -> validate([
+                'description' => 'max:200',
+            ]);
+            // đường dẫn lưu ảnh vào file public/uploads
+            if($req->file('file')){
+                $oldrow = $post_edit->find($id);
+                if(file_exists('uploads/'.$oldrow->image)){
+                    unlink('uploads/'.$oldrow->image);
+                }
+                $path = $req->file('file')->store('/',['disk' =>'my_disk']);
+                $data['image'] = $path;
+            }
+            
+            // lưu dữ liệu vào bảng news
+            $data['title'] = $req->input('title');
+            $data['description'] = $req->input('description');
+            $data['content'] = $req->input('content');
+            $data['updated_at'] = date("Y-m-d");
+            
+            $post_edit->where('id',$id)->update($data);
+            toastr()->success('Sửa thông tin thành công!');
+            return redirect('test/event/edit/' . $id);
+        }
+        $row = $post_edit->find($id);
+        return view('admin.admin-event-edit',['row' => $row], $user);
+    }
+
+    //xoá sự kiện
+    public function event_delete(Request $req, $id ='') {
+        $user['info'] = Auth::user()->username;
+        $post_delete = new Events();
+        $row = $post_delete->find($id);
+        if ($req->method() == 'POST'){
+            $row->delete();
+            toastr()->success('Đã xoá sự kiện!');
+            return redirect('test');
+        }
+        return view('admin.admin-event-delete',['row' => $row], $user);
     }
 }

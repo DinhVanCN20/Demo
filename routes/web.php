@@ -61,6 +61,14 @@ Route::post('/test/edit/{id}', [Admin::class, 'test_edit']);
 Route::get('/admin/post/delete/{id}', [Admin::class, 'post_delete']);
 Route::post('/admin/post/delete/{id}', [Admin::class, 'post_delete']);
 
+/*ADMIN quản lý sự kiện*/
+Route::get('/test/event', [Admin::class, 'event_add'])-> middleware('admin');
+Route::post('/test/event', [Admin::class, 'event_add']);
+Route::get('/test/event/edit/{id}', [Admin::class, 'event_edit']);
+Route::post('/test/event/edit/{id}', [Admin::class, 'event_edit']);
+Route::get('/test/event/delete/{id}', [Admin::class, 'event_delete']);
+Route::post('/test/event/delete/{id}', [Admin::class, 'event_delete']);  
+
 /*ADMIN đăng nhập đk tk, đăng xuất*/
 Route::get('/admin', [Admin::class, 'admin'])->name('signin');
 Route::post('/admin', [Admin::class, 'adminLogin'])->name('Login');
