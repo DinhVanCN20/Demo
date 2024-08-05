@@ -19,11 +19,6 @@ class CreateCategoriesTable extends Migration
             $table->string('category_name');
             $table->timestamps();
         });
-
-        DB::table('categories')->insert([
-            ['category_name' => 'Tin tức'],
-            ['category_name' => 'Sự kiện'],
-        ]);
     }
 
     /**
