@@ -10,4 +10,15 @@ class News extends Model
     use HasFactory;
     protected $table = 'news';
     public $timestamps = true;
+    protected $fillable = [
+        'category_id',
+        'title',
+        'description',
+        'image',
+        'content',
+    ];
+
+    public function category(){
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

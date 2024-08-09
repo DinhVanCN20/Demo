@@ -51,23 +51,21 @@
       </div>
         <table class="table table-striped table-hover">
           <thead>
-              <tr><th>Tiêu đề</th><th>Hình ảnh</th><th>Miêu tả</th><th>Ngày đăng</th><th>Tuỳ chọn</th></tr>
+              <tr><th>Loại</th><th>Tiêu đề</th><th>Hình ảnh</th><th>Miêu tả</th><th>Ngày đăng</th><th>Tuỳ chọn</th></tr>
           </thead>
           <tbody>
-              @if($posts)
-                  @foreach($posts as $row)
-                      <tr><td>{{$row->title}}</td><td><img src="{{url ('uploads/'.$row->image)}}" style='width:120px;'/></td><td>{{$row->description}}</td><td>{{date("d/m/Y",strtotime($row->created_at))}}</td>
-                          <td>
-                              <a href="{{url('test/edit/'.$row->id)}}">
-                                  <button class="btn-sm btn btn-success">Sửa</button>
-                              </a>
-                              <a href="{{url('admin/post/delete/'.$row->id)}}">
-                                  <button class="btn-sm btn btn-warning">Xoá</button>
-                              </a>
-                          </td>
-                      </tr>
-                  @endforeach
-              @endif
+              @foreach($items as $item)
+                  <tr><td>{{$item->type}}</td><td>{{$item->title}}</td><td><img src="{{url ('uploads/'.$item->image)}}" style='width:120px;'/></td><td>{{$item->description}}</td><td>{{date("d/m/Y",strtotime($item->created_at))}}</td>
+                      <td>
+                          <a href="{{url('test/edit/'.$item->id)}}">
+                              <button class="btn-sm btn btn-success">Sửa</button>
+                          </a>
+                          <a href="{{url('admin/post/delete/'.$item->id)}}">
+                              <button class="btn-sm btn btn-warning">Xoá</button>
+                          </a>
+                      </td>
+                  </tr>
+              @endforeach
           </tbody>
       </table>
     </div>

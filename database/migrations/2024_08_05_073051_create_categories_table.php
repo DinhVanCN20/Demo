@@ -15,10 +15,15 @@ class CreateCategoriesTable extends Migration
     public function up()
     {
         Schema::create('categories', function (Blueprint $table) {
-            $table->id('category_id');
+            $table->id();
             $table->string('category_name');
             $table->timestamps();
         });
+
+        DB::table('categories')->insert([
+            ['category_name' => 'Tin tức'],
+            ['category_name' => 'Sự kiện'],
+        ]);
     }
 
     /**

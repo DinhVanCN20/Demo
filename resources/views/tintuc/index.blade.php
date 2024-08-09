@@ -189,32 +189,25 @@
               
               <div class="tab-content content-event mt-4" id="myTabContent">
                   <div class="tab-pane fade show active" id="noibat" role="tabpanel" aria-labelledby="home-tab">
-                    @if($posts)
-                      @foreach($posts as $row)
-                        <ul class='pl-4 pr-4 '>
-                          <li class='w-100 '><span><strong>Tin tức</strong>{{$row->title}}<span>{{date("d/m/Y",strtotime($row->created_at))}}</span></span></li>
-                        </ul>
-                      @endforeach
-                    @endif
+                    @foreach($items as $item)
+                      <ul class='pl-4 pr-4 '>
+                        <li class='w-100 '><span><strong>{{$item->type}}</strong>{{$item->title}}<span>{{date("d/m/Y",strtotime($item->created_at))}}</span></span></li>
+                      </ul>
+                    @endforeach
                   </div>
                   <div class="tab-pane fade" id="tintuc" role="tabpanel" aria-labelledby="profile-tab">
-                    @if($posts)
-                      @foreach($posts as $row)
-                      <ul class='pl-4 pr-4 '>
-                          <li class='w-100 '><span><strong>Tin tức</strong>{{$row->title}}<span>2{{date("d/m/Y",strtotime($row->created_at))}}</span></span></li>
-                      </ul>
+                      @foreach($items as $item)
+                        <ul class='pl-4 pr-4 '>
+                          <li class='w-100 '><span><strong>{{$item->type}}</strong>{{$item->title}}<span>{{date("d/m/Y",strtotime($item->created_at))}}</span></span></li>
+                        </ul>
                       @endforeach
-                    @endif 
                   </div>
                   <div class="tab-pane fade" id="sukien" role="tabpanel" aria-labelledby="contact-tab">
-                      <ul class='pl-4 pr-4 '>
-                          <li class='w-100 '><span><strong>Sự kiện</strong>Khai mở s1 máy chủ<span>23/03/2019</span></span></li>
-                          <li class='w-100 mt-3'> <span><strong>Sự kiện</strong>Khai mở s1 máy chủ<span>23/03/2019</span></span></li>
-                          <li class='w-100 mt-3'><span><strong>Sự kiện</strong>Khai mở s1 máy chủ<span>23/03/2019</span></span></li>
-                          <li class='w-100 mt-3' ><span><strong>Sự kiện</strong>Khai mở s1 máy chủ<span>23/03/2019</span></span></li>
-                          <li class='w-100 mt-3' ><span><strong>Sự kiện</strong>Khai mở s1 máy chủ<span>23/03/2019</span></span></li>
-                          <li class='w-100 mt-3' ><span><strong>Sự kiện</strong>Khai mở s1 máy chủ<span>23/03/2019</span></span></li>
+                      @foreach($items as $item)
+                        <ul class='pl-4 pr-4 '>
+                          <li class='w-100 '><span><strong>{{$item->type}}</strong>{{$item->title}}<span>{{date("d/m/Y",strtotime($item->created_at))}}</span></span></li>
                         </ul>
+                      @endforeach
                   </div>
               </div>
             </div>

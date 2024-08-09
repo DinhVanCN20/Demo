@@ -25,9 +25,7 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 
             /*Cổng tin tức*/
 Route::get('/', [NewsController::class, 'index'])->name('index');
-Route::get('/sukien', function () {
-    return view('tintuc.sukien');
-});
+Route::get('/sukien', [NewsController::class, 'sukien']);
 Route::get('/thongtin', function () {
     return view('tintuc.thongtin');
 });
