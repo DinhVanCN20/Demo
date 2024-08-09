@@ -196,18 +196,22 @@
                     @endforeach
                   </div>
                   <div class="tab-pane fade" id="tintuc" role="tabpanel" aria-labelledby="profile-tab">
-                      @foreach($items as $item)
+                    @foreach($items as $item)
+                      @if($item->category_id == '1')
                         <ul class='pl-4 pr-4 '>
                           <li class='w-100 '><span><strong>{{$item->type}}</strong>{{$item->title}}<span>{{date("d/m/Y",strtotime($item->created_at))}}</span></span></li>
                         </ul>
-                      @endforeach
+                      @endif
+                    @endforeach
                   </div>
                   <div class="tab-pane fade" id="sukien" role="tabpanel" aria-labelledby="contact-tab">
-                      @foreach($items as $item)
+                    @foreach($items as $item)
+                      @if($item->category_id == '2')
                         <ul class='pl-4 pr-4 '>
                           <li class='w-100 '><span><strong>{{$item->type}}</strong>{{$item->title}}<span>{{date("d/m/Y",strtotime($item->created_at))}}</span></span></li>
                         </ul>
-                      @endforeach
+                      @endif
+                    @endforeach
                   </div>
               </div>
             </div>

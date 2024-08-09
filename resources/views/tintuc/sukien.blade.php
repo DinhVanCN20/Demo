@@ -51,20 +51,20 @@
             </div>
             <div class='content-tintuc scroll-box mt-4'>
               <ul>
-                @if($posts)
-                    @foreach($posts as $row)
-                      <li class='box-tintuc'><a>
-                        <img src='{{url ('uploads/'.$row->image)}}'>
-                        <div class='float-right box-text'>
-                            <p>
-                                <strong>{{$row->title}}</strong>
-                                <span>{{date("d/m/Y",strtotime($row->created_at))}}</span>  
-                            </p>{{$row->description}}
-                            <p></p>
-                        </div>
-                      </a></li>
-                      @endforeach
+                @foreach($items as $item)
+                  @if($item->category_id == '2')
+                    <li class='box-tintuc'><a>
+                      <img src='{{url ('uploads/'.$item->image)}}'>
+                      <div class='float-right box-text'>
+                          <p>
+                              <strong>{{$item->title}}</strong>
+                              <span>{{date("d/m/Y",strtotime($item->created_at))}}</span>  
+                          </p>{{$item->description}}
+                          <p></p>
+                      </div>
+                    </a></li>
                   @endif
+                @endforeach
                 <li class='box-tintuc'><a>
                     <img src='./assets/images/ts_icon_02.png'>
                     <div class='float-right box-text'>

@@ -15,6 +15,7 @@ class NewsController extends Controller
         ->join('categories', 'news.category_id', '=', 'categories.id')
         ->select('categories.category_name as type',
                 'news.id',
+                'news.category_id',
                 'news.title',
                 'news.image',
                 'news.description',
@@ -28,17 +29,37 @@ class NewsController extends Controller
 
     public function tintuc() {
         $user['info'] = Auth::user()->username;
-        $posts = News::orderBy('created_at', 'desc')->get();
-        $data = ['posts' => $posts];
+        $items = DB::table('news')
+        ->join('categories', 'news.category_id', '=', 'categories.id')
+        ->select('categories.category_name as type',
+                'news.id',
+                'news.category_id',
+                'news.title',
+                'news.image',
+                'news.description',
+                'news.created_at'
+        )
+        ->orderBy('news.created_at', 'desc')
+        ->get();
         
-        return view('tintuc.tintuc',$data, $user);
+        return view('tintuc.tintuc', $user, compact('items'));
     }
 
     public function sukien() {
         $user['info'] = Auth::user()->username;
-        $posts = News::orderBy('created_at', 'desc')->get();
-        $data = ['posts' => $posts];
+        $items = DB::table('news')
+        ->join('categories', 'news.category_id', '=', 'categories.id')
+        ->select('categories.category_name as type',
+                'news.id',
+                'news.category_id',
+                'news.title',
+                'news.image',
+                'news.description',
+                'news.created_at'
+        )
+        ->orderBy('news.created_at', 'desc')
+        ->get();
         
-        return view('tintuc.sukien',$data, $user);
+        return view('tintuc.sukien', $user, compact('items'));
     }
 }
