@@ -6,7 +6,6 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\UserGame;
 use App\Models\News;
-use App\Models\Events;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -116,7 +115,7 @@ class Admin extends Controller
         return redirect()->route('list');
     }
 
-    //thêm tin tức mới
+    //thêm tin tức và sự kiện mới
     public function test_add(Request $req) {
         $user['info'] = Auth::user()->username;
         if ($req->method() == 'POST'){
@@ -124,6 +123,7 @@ class Admin extends Controller
 
             // validate dữ liệu đầu vào
             $validated = $req -> validate([
+                'type' => 'required',
                 'title' => 'required',
                 'file' => 'required|image',
                 'description' => 'required|max:200',
@@ -133,7 +133,7 @@ class Admin extends Controller
             $path = $req->file('file')->store('/',['disk' =>'my_disk']);
 
             // lưu dữ liệu vào bảng news
-            $data['category_id'] = '1';
+            $data['category_id'] = $req -> input('type');
             $data['title'] = $req->input('title');
             $data['image'] = $path;
             $data['description'] = $req->input('description');
@@ -168,6 +168,7 @@ class Admin extends Controller
             }
             
             // lưu dữ liệu vào bảng news
+            $data['category_id'] = $req->input('type');
             $data['title'] = $req->input('title');
             $data['description'] = $req->input('description');
             $data['content'] = $req->input('content');
@@ -192,37 +193,5 @@ class Admin extends Controller
             return redirect('test');
         }
         return view('admin.admin-post-delete1',['row' => $row], $user);
-    }
-
-    //Sự kiện
-    //thêm sự kiện mới
-    public function event_add(Request $req) {
-        $user['info'] = Auth::user()->username;
-        if ($req->method() == 'POST'){
-            $post = new News();
-
-            // validate dữ liệu đầu vào
-            $validated = $req -> validate([
-                'title' => 'required',
-                'file' => 'required|image',
-                'description' => 'required|max:200',
-                'content' =>'required'
-            ]);
-            // đường dẫn lưu ảnh vào file public/uploads
-            $path = $req->file('file')->store('/',['disk' =>'my_disk']);
-
-            // lưu dữ liệu vào bảng events
-            $data['category_id'] = '2';
-            $data['title'] = $req->input('title');
-            $data['image'] = $path;
-            $data['description'] = $req->input('description');
-            $data['content'] = $req->input('content');
-            $data['created_at'] = date("Y-m-d");
-            $data['updated_at'] = date("Y-m-d");
-            
-            $post->insert($data);
-            toastr()->success('Thêm sự kiện thành công!');
-        }
-        return view('admin.index-add-event',$user);
     }
 }

@@ -2,9 +2,25 @@
   <div class="container-fluid col-lg-10 "> 
     <form method="POST" enctype="multipart/form-data" class="">
       @csrf
-      {{--  @if($errors->any())
-        {{ implode('', $errors->all('<div>:message</div>')) }}
-      @endif  --}}
+
+      <div class="input-group input-group-outline">
+        <label for="file" class="col-sm-1 col-form-lable" style="size: 20px">Loại</label>
+        
+        <div class="col-sm-11">
+          <input name="type" value="1"
+          @if($row->category_id == 1)
+            {{"checked"}}
+          @endif
+          type="radio">Tin tức &nbsp;
+          
+          <input name="type" value="2"
+          @if($row->category_id == 2)
+            {{"checked"}}
+          @endif
+          type="radio">Sự kiện
+        </div>
+      </div><br> 
+
       <div class="input-group input-group-outline">
         <label for="file" class="col-sm-1 col-form-lable">Tiêu đề</label>
         <div class="col-sm-11">
