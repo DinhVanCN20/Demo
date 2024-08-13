@@ -103,7 +103,7 @@ class Admin extends Controller
         $user->type = $request->type;
         $user->phonenumber = $request->phonenumber;
         $user->save();
-        toastr()->success('Sửa thông tin thành công!');
+        toastr()->success('Sửa thông tin user thành công!');
         return redirect('/test/editUser/'.$id);
     }
 
@@ -142,7 +142,7 @@ class Admin extends Controller
             $data['updated_at'] = date("Y-m-d");
             
             $post->insert($data);
-            toastr()->success('Thêm tin tức thành công!');
+            toastr()->success('Thêm thành công!');
         }
         return view('admin.index-add',$user);
     }
@@ -175,7 +175,7 @@ class Admin extends Controller
             $data['updated_at'] = date("Y-m-d");
             
             $post_edit->where('id',$id)->update($data);
-            toastr()->success('Sửa thông tin thành công!');
+            toastr()->success('Sửa thành công!');
             return redirect('test/edit/' . $id);
         }
         $row = $post_edit->find($id);
@@ -189,7 +189,7 @@ class Admin extends Controller
         $row = $post_delete->find($id);
         if ($req->method() == 'POST'){
             $row->delete();
-            toastr()->success('Đã xoá tin tức!');
+            toastr()->success('Đã xoá thành công!');
             return redirect('test');
         }
         return view('admin.admin-post-delete1',['row' => $row], $user);
