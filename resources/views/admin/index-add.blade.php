@@ -205,6 +205,9 @@
               <div class="col-sm-11">
                 <input name="type" value="1" type="radio">Tin tức &nbsp;
                 <input name="type" value="2" type="radio">Sự kiện
+                @error('type')
+                  <div class="text-danger">{{$message}}</div>
+                @enderror
               </div>
             </div><br>
 
@@ -241,11 +244,10 @@
             <div class="input-group input-group-outline">
               <label for="content" class="col-sm-1 col-form-lable">Nội dung</label>
               <textarea name="content" id="summernote"></textarea>
-              @error('content')
-                <div class="text-danger">{{$message}}</div>
-              @enderror
             </div>
-            
+            @error('content')
+              <div class="text-danger">{{$message}}</div>
+            @enderror
             <br>
             <input class="btn btn-primary" type="submit" value="Đăng bài">
           </form>
