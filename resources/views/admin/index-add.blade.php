@@ -336,7 +336,6 @@
         $('#summernote').summernote({
           tabsize: 1,
           height: 100,
-          
         });
     });
   </script>

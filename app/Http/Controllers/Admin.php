@@ -6,9 +6,12 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\UserGame;
 use App\Models\News;
+use DOMDocument;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class Admin extends Controller
 {
@@ -129,6 +132,25 @@ class Admin extends Controller
                 'description' => 'required|max:200',
                 'content' =>'required'
             ]);
+            
+            //lưu dữ file hình ảnh của summernote vào bảng news
+            $content = $req -> content;
+            
+            $doc = new DOMDocument();
+            $doc->loadHTML($content,9);
+            
+            $image_content = $doc-> getElementsByTagName('img');
+            // đường dẫn lưu ảnh vào file public/upload
+            foreach ($image_content as $key => $img){
+                $datas = base64_decode(explode(',', explode(';', $img->getAttribute('src'))[1])[1]);
+                $image_name = "/upload/".time(). $key.'png';
+                file_put_contents(public_path().$image_name, $datas);
+                
+                $img->removeAttribute('src');
+                $img->setAttribute('src', asset($image_name));
+            }
+            $content = $doc->saveHTML();
+
             // đường dẫn lưu ảnh vào file public/uploads
             $path = $req->file('file')->store('/',['disk' =>'my_disk']);
 
@@ -137,7 +159,7 @@ class Admin extends Controller
             $data['title'] = $req->input('title');
             $data['image'] = $path;
             $data['description'] = $req->input('description');
-            $data['content'] = $req->input('content');
+            $data['content'] = $content;
             $data['created_at'] = date("Y-m-d");
             $data['updated_at'] = date("Y-m-d");
             
@@ -166,12 +188,32 @@ class Admin extends Controller
                 $path = $req->file('file')->store('/',['disk' =>'my_disk']);
                 $data['image'] = $path;
             }
+
+            $content = $req -> content;
+            
+            $doc = new DOMDocument();
+            $doc->loadHTML($content,9);
+            
+            $image_content = $doc-> getElementsByTagName('img');
+            // đường dẫn lưu ảnh vào file public/upload
+            foreach ($image_content as $key => $img){
+                //check xem có ảnh mới ko
+                if(strpos($img->getAttribute('src'),'data:image/png') === 0){
+                    $datas = base64_decode(explode(',', explode(';', $img->getAttribute('src'))[1])[1]);
+                    $image_name = "/upload/".time(). $key.'png';
+                    file_put_contents(public_path().$image_name, $datas);
+                    
+                    $img->removeAttribute('src');
+                    $img->setAttribute('src', asset($image_name));
+                }
+            }
+            $content = $doc->saveHTML();
             
             // lưu dữ liệu vào bảng news
             $data['category_id'] = $req->input('type');
             $data['title'] = $req->input('title');
             $data['description'] = $req->input('description');
-            $data['content'] = $req->input('content');
+            $data['content'] = $content;
             $data['updated_at'] = date("Y-m-d");
             
             $post_edit->where('id',$id)->update($data);
