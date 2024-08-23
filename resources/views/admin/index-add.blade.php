@@ -242,8 +242,10 @@
             </div> <br>
             
             <div class="input-group input-group-outline">
-              <label for="content" class="col-sm-1 col-form-lable">Nội dung</label>
-              <textarea name="content" id="summernote"></textarea>
+              <div class="col-sm-11">
+                <label for="content" class="col-sm-1 col-form-lable">Nội dung</label>
+                <textarea class="form-control" name="content" id="content"></textarea> 
+              </div>
             </div>
             @error('content')
               <div class="text-danger">{{$message}}</div>
@@ -331,14 +333,19 @@
     </div>
   </div>
   <!--   Core JS Files   -->
+  <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
   <script>
-    $(document).ready(function() {
-        $('#summernote').summernote({
-          tabsize: 1,
-          height: 100,
-        });
-    });
+    var options = {
+      filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+      filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
+      filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+      filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
+    };
   </script>
+  <script>
+    CKEDITOR.replace('content', options);
+  </script>
+  
   <script src="../asset/js/core/popper.min.js"></script>
   <script src="../asset/js/core/bootstrap.min.js"></script>
   <script src="../asset/js/plugins/perfect-scrollbar.min.js"></script>

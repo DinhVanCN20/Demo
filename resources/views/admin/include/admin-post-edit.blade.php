@@ -52,8 +52,12 @@
         </div>
       </div><br> 
       
-      <label for="content">Nội dung</label>
-      <textarea name="content" id="summernote" >{{$row->content}}</textarea>
+      <div class="input-group input-group-outline">
+        <div class="col-sm-11">
+          <label for="content" class="col-sm-1 col-form-lable">Nội dung</label>
+          <textarea class="ckeditor form-control" name="content" id="content">{{$row->content}}</textarea> 
+        </div>
+      </div>
       @error('title')
         <div class="text-danger">{{$message}}</div>
       @enderror
@@ -62,6 +66,5 @@
       <a href="{{url('test')}}">
         <input class="btn btn-success" style="float: right;" type="button" value="Trở về">
       </a>
-      
     </form>
   </div>

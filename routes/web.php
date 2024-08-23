@@ -51,6 +51,9 @@ Route::post('/test/editUser/{id}',[Admin::class, 'editUser_post']);
 Route::get('/delete/{id}',[Admin::class, 'deleteUser'])->name('user.delete');
 
 /*ADMIN quản lý tin tức*/
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
 Route::get('/test', [Admin::class, 'test'])-> middleware('admin');
 Route::get('/test/add', [Admin::class, 'test_add'])-> middleware('admin');
 Route::post('/test/add', [Admin::class, 'test_add']);

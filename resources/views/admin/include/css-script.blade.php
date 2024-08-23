@@ -1,14 +1,21 @@
 <!--   Core JS Files   -->
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+<script>
+    var options = {
+        filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+        filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
+        filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+        filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
+    };
+</script>
+<script>
+    CKEDITOR.replace('content', options);
+</script>
 <script src="/asset/js/core/popper.min.js" ></script>
 <script src="/asset/js/core/bootstrap.min.js" ></script>
 <script src="/asset/js/plugins/perfect-scrollbar.min.js" ></script>
 <script src="/asset/js/plugins/smooth-scrollbar.min.js" ></script>
 
-<script>
-    $(document).ready(function() {
-        $('#summernote').summernote({height:150});
-    });
-</script>
 
 <script>
     var win = navigator.platform.indexOf('Win') > -1;
